@@ -11,8 +11,8 @@ class Cardin:
         'Accept': 'application/json; charset=UTF-8',
         'Cache-Control': 'no-cache'}
     
-    def __init__(self, user_credentials):
-        self.credentials = user_credentials  # ('username', 'password')
+    def __init__(self, user_credentials):  # ('username', 'password')
+        self.credentials = user_credentials
 
     def __call__(self, endpoint, **params):
         url = f'{Cardin.base_url}/{endpoint}?_={int(time.time() * 1000)}'
