@@ -4,9 +4,10 @@ import requests
 
 class Cardin:    
     base_url = 'https://gateway.cardin.it/publicapi/v3'
-
+    user_agent = ('Mozilla/5.0 (Linux; Android 13; Pixel 6a) AppleWebKit/537.36 '
+                  '(KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36')
     headers = {
-        'User-Agent': 'cardin',  # arbitrarily chosen, to substitute Requests' default
+        'User-Agent': user_agent,
         'Content-type': 'application/json; charset=UTF-8',
         'Accept': 'application/json; charset=UTF-8',
         'Cache-Control': 'no-cache'}
