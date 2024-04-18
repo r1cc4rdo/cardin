@@ -35,6 +35,6 @@ if __name__ == '__main__':
     cardin = Cardin(('your username', 'your password'))
     pprint(cardin('account/checkgdpr'))
 
-    receiver = cardin.device(('your device id', 'your device pin'))
+    receiver = cardin.receiver(('your device id', 'your device pin'))
     pprint(receiver('status', activeHigh='true', deviceRead='false'))
     pprint(receiver('activatechannel', channel='A', deviceType='R'))
