@@ -20,21 +20,21 @@ class Cardin:
         response.raise_for_status()
         return response.json()
 
-    def device(self, device_credentials):  # ('device_id', 'device_pin')
+    def receiver(self, device_credentials):  # ('device_id', 'device_pin')
         credentials_dict = dict(zip(('serialKey', 'pin'), device_credentials))
         
-        def device_fun(endpoint, **params):
-            return self(endpoint, context='cardin', **credentials_dict, **params)
+        def receiver_fun(endpoint, **params):
+            return self(f'receiver/{endpoint}', context='cardin', **credentials_dict, **params)
         
-        return device_fun
+        return receiver_fun
 
 
 if __name__ == '__main__':
     from pprint import pprint
 
-    cardin = Cardin(user_credentials)
+    cardin = Cardin(('your username', 'your password'))
     pprint(cardin('account/checkgdpr'))
 
-    receiver = cardin.device(device_credentials)
-    pprint(receiver('receiver/status', activeHigh='true', deviceRead='false'))
-    pprint(receiver('receiver/activatechannel', channel='A', deviceType='R'))
+    receiver = cardin.device(('your device id', 'your device pin'))
+    pprint(receiver('status', activeHigh='true', deviceRead='false'))
+    pprint(receiver('activatechannel', channel='A', deviceType='R'))
