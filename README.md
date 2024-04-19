@@ -46,7 +46,7 @@ In order to use this code, you will need both user and device credentials.
 To my knowledge there is no official documentation for the API. If anyone at Cardin is listening, an open officially supported API standard would surely attract and retain more customers :)
 
 The [CRD ONE](https://play.google.com/store/apps/details?id=it.cardin.cardinremotecontrol) app is written using the [Apache Cordova](https://cordova.apache.org/) framework.
-It should be technically possible to run the Cordova app extracted from the .apk on desktop with no modifications, if there are binaries in ```lib``` for your platform.
+It should be technically possible to run the Cordova app extracted from the .apk on desktop with no modifications, provided ```lib``` contains binaries for your platform.
 
 Within the source code, under ```assets/www```:
 * ```webservice/wshandler.js``` defines the API endpoints,
