@@ -51,7 +51,7 @@ Within the source code, under ```assets/www```:
 * ```webservice/requestws.js``` contains the ```execute``` function to call them, and
 * ```config.js``` and ```constants.js``` have useful definitions and defaults.
 
-I cannot test any other endpoints since than those covered above since I don't have the corresponding device. If you successfully verify others, send a [pull request](https://github.com/r1cc4rdo/cardin/pulls)!
+Most endpoints cannot be tested without access to the corresponding device. Should you verify any other, send a [pull request](https://github.com/r1cc4rdo/cardin/pulls)!
 
 ## Links
 * [Cardin website](https://www.cardin.it)
