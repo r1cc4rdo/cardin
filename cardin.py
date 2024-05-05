@@ -21,12 +21,8 @@ class Cardin:
         return response.json()
 
     def receiver(self, device_credentials):  # ('device_id', 'device_pin')
-        credentials_dict = dict(zip(('serialKey', 'pin'), device_credentials))
-        
-        def receiver_fun(endpoint, **params):
-            return self(f'receiver/{endpoint}', context='cardin', **credentials_dict, **params)
-        
-        return receiver_fun
+        fixed_params = dict(zip(('serialKey', 'pin'), device_credentials)) | {'context': 'cardin'}
+        return lambda endpoint, **params: self(f'receiver/{endpoint}', **fixed_params, **params)
 
 
 if __name__ == '__main__':
