@@ -36,6 +36,9 @@ print(receiver('activatechannel', channel='A', deviceType='R'))
 ```
 In order to use this code, you will need both user and device credentials.
 
+We also provide a [javascript implementation](https://github.com/r1cc4rdo/cardin/blob/main/cardin.html)
+that can be embedded in a webpage and served from anywhere (for example, Github pages ;)).
+
 ## API endpoints
 To my knowledge there is no official documentation for the API. If anyone at Cardin is listening, an open officially supported API standard would surely attract and retain more customers :)
 
