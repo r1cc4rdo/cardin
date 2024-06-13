@@ -56,7 +56,7 @@
 
             var success = true;
             var headers = new Headers();
-            headers.append("Authorization", "Basic " + btoa(`${cardin-user}:${cardin-pass}`));
+            headers.append("Authorization", "Basic " + btoa(`${user}:${pass}`));
             headers.append("Content-type", "application/json; charset=UTF-8");
             headers.append("Accept", "application/json; charset=UTF-8");
             headers.append("Cache-Control", "no-cache");
@@ -65,7 +65,7 @@
                 fetch('https://gateway.cardin.it/publicapi/v3/receiver/activatechannel?_=' + new Date().getTime(), {
                     method: 'POST',
                     headers: headers,
-                    body: `{"context":"cardin","serialKey":"${cardin-serial}","pin":"${cardin-pin}","channel":"A","deviceType":"R"}`,
+                    body: `{"context":"cardin","serialKey":"${serial}","pin":"${pin}","channel":"A","deviceType":"R"}`,
                     cache: 'no-cache',
                     mode: 'cors',
                     redirect: 'follow',
