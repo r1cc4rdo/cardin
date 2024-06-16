@@ -52,6 +52,11 @@ Within the source code, under ```assets/www```:
 
 Most endpoints cannot be tested without access to the corresponding device. Should you verify any other, send a [pull request](https://github.com/r1cc4rdo/cardin/pulls)!
 
+## Android app
+This repository also includes an [Android app](https://github.com/r1cc4rdo/cardin/blob/main/cancello.apk) that can be used to exercise the API. It should be self-explanatory :)
+|![](media/config.png)|![](media/loading.png)|![](media/success.png)|
+| ------------------- | -------------------- | -------------------- |
+
 ## Links
 * [Cardin website](https://www.cardin.it)
 * [Cardin software downloads](https://www.cardin.it/it/assistenza/software-download)
