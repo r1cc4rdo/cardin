@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfigurationActivity">
+
+    <ImageView
+        android:id="@+id/cfgBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        android:src="@drawable/cardin" />
+
+    <TextView
+        android:id="@+id/credsUsernameLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cfgBanner"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"        
+        android:text="@string/creds_username" />
+
+    <EditText
+        android:id="@+id/credsUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/credsUsernameLabel"
+        android:singleLine="true"
+        android:background="#10000000"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"        
+        android:layout_marginBottom="16dp"
+        android:paddingTop="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"/>
+
+    <TextView
+        android:id="@+id/credsPasswordLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/credsUsername"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"        
+        android:text="@string/creds_password" />
+
+    <EditText
+        android:id="@+id/credsPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/credsPasswordLabel"
+        android:singleLine="true"        
+        android:background="#10000000"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"        
+        android:layout_marginBottom="16dp"
+        android:paddingTop="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"/>
+
+
+    <TextView
+        android:id="@+id/credsSerialLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/credsPassword"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"        
+        android:text="@string/creds_serial" />
+
+    <EditText
+        android:id="@+id/credsSerial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/credsSerialLabel"
+        android:background="#10000000"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"        
+        android:layout_marginBottom="16dp"
+        android:inputType="number"
+        android:paddingTop="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"/>
+
+    <TextView
+        android:id="@+id/credsPinLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/credsSerial"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"        
+        android:text="@string/creds_pin" />
+
+    <EditText
+        android:id="@+id/credsPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/credsPinLabel"
+        android:background="#10000000"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"        
+        android:layout_marginBottom="16dp"
+        android:inputType="number"
+        android:paddingTop="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"/>
+
+    <CheckBox
+        android:id="@+id/autoClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/auto_close"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@id/credsPin"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/config_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:text="@string/config_save" />
+
+</RelativeLayout>

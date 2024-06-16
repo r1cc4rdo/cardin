@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Cancello</string>
+
+    <string name="send">Invia</string>
+    <string name="configure">Configura</string>
+    <string name="share_via">Condividi con</string>
+    <string name="log_mode">Modalità log abilitata</string>
+
+    <string name="creds_username">Nome utente</string>
+    <string name="creds_password">Password</string>
+    <string name="creds_serial">Seriale dispositivo</string>
+    <string name="creds_pin">PIN dispositivo</string>
+    <string name="auto_close">Chiudi automaticamente\nin caso di successo</string>
+    <string name="config_save">Salva</string>
+
+</resources>
