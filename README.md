@@ -65,4 +65,4 @@ This repository also includes an [Android app](https://github.com/r1cc4rdo/cardi
 
 ## Developer resources
 * [Apache Cordova](https://cordova.apache.org/)
-* [Kotlin]: [cheat sheets](https://www.cs.dartmouth.edu/~sergey/cs65/cheatsheets/), [scaletypes](https://thoughtbot.com/blog/android-imageview-scaletype-a-visual-guide)
+* Kotlin: [cheat sheets](https://www.cs.dartmouth.edu/~sergey/cs65/cheatsheets/), [scaletypes](https://thoughtbot.com/blog/android-imageview-scaletype-a-visual-guide)
