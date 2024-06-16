@@ -62,4 +62,7 @@ This repository also includes an [Android app](https://github.com/r1cc4rdo/cardi
 * [Cardin software downloads](https://www.cardin.it/it/assistenza/software-download)
 * [CRD ONE app](https://play.google.com/store/apps/details?id=it.cardin.cardinremotecontrol) on Google's Play Store
 * [CRD ONE guide](https://gateway.cardin.it/public/files/crdone-guide.pdf) (pdf)
+
+## Developer resources
 * [Apache Cordova](https://cordova.apache.org/)
+* [Kotlin]: [cheat sheets](https://www.cs.dartmouth.edu/~sergey/cs65/cheatsheets/), [scaletypes](https://thoughtbot.com/blog/android-imageview-scaletype-a-visual-guide)
